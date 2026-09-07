@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "logMarkers": [
+    "session_meta",
+    "token_count",
+    "turn_context",
+    "rate_limits"
+  ],
+  "rules": {
+    "accountUsage": {
+      "plan_type": {
+        "paths": [
+          [
+            "plan_type"
+          ]
+        ]
+      },
+      "rate_limit": {
+        "paths": [
+          [
+            "rate_limit"
+          ]
+        ]
+      },
+      "additional_rate_limits": {
+        "paths": [
+          [
+            "additional_rate_limits"
+          ]
+        ]
+      },
+      "credits": {
+        "paths": [
+          [
+            "credits"
+          ]
+        ]
+      },
+      "rate_limit_reached_type": {
+        "paths": [
+          [
+            "rate_limit_reached_type"
+          ]
+        ]
+      },
+      "rate_limit_reset_credits": {
+        "paths": [
+          [
+            "rate_limit_reset_credits"
+          ]
+        ]
+      }
+    },
+    "accountLimit": {
+      "primary_window": {
+        "paths": [
+          [
+            "primary_window"
+          ]
+        ]
+      },
+      "secondary_window": {
+        "paths": [
+          [
+            "secondary_window"
+          ]
+        ]
+      }
+    },
+    "accountWindow": {
+      "used_percent": {
+        "paths": [
+          [
+            "used_percent"
+          ]
+        ]
+      },
+      "limit_window_seconds": {
+        "paths": [
+          [
+            "limit_window_seconds"
+          ]
+        ]
+      },
+      "reset_at": {
+        "paths": [
+          [
+            "reset_at"
+          ]
+        ]
+      }
+    },
+    "additionalLimit": {
+      "metered_feature": {
+        "paths": [
+          [
+            "metered_feature"
+          ]
+        ]
+      },
+      "limit_name": {
+        "paths": [
+          [
+            "limit_name"
+          ]
+        ]
+      },
+      "rate_limit": {
+        "paths": [
+          [
+            "rate_limit"
+          ]
+        ]
+      }
+    },
+    "creditsBalance": {
+      "has_credits": {
+        "paths": [
+          [
+            "has_credits"
+          ]
+        ]
+      },
+      "unlimited": {
+        "paths": [
+          [
+            "unlimited"
+          ]
+        ]
+      },
+      "balance": {
+        "paths": [
+          [
+            "balance"
+          ]
+        ]
+      }
+    },
+    "creditsCount": {
+      "available_count": {
+        "paths": [
+          [
+            "available_count"
+          ]
+        ]
+      }
+    },
+    "resetCredits": {
+      "available_count": {
+        "paths": [
+          [
+            "available_count"
+          ]
+        ]
+      },
+      "credits": {
+        "paths": [
+          [
+            "credits"
+          ]
+        ]
+      }
+    },
+    "resetCredit": {
+      "id": {
+        "paths": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "reset_type": {
+        "paths": [
+          [
+            "reset_type"
+          ]
+        ]
+      },
+      "status": {
+        "paths": [
+          [
+            "status"
+          ]
+        ]
+      },
+      "granted_at": {
+        "paths": [
+          [
+            "granted_at"
+          ]
+        ]
+      },
+      "expires_at": {
+        "paths": [
+          [
+            "expires_at"
+          ]
+        ]
+      },
+      "title": {
+        "paths": [
+          [
+            "title"
+          ]
+        ]
+      },
+      "description": {
+        "paths": [
+          [
+            "description"
+          ]
+        ]
+      }
+    },
+    "sessionEvent": {
+      "type": {
+        "paths": [
+          [
+            "type"
+          ]
+        ]
+      },
+      "timestamp": {
+        "paths": [
+          [
+            "timestamp"
+          ]
+        ]
+      },
+      "payload": {
+        "paths": [
+          [
+            "payload"
+          ]
+        ]
+      }
+    },
+    "sessionPayload": {
+      "type": {
+        "paths": [
+          [
+            "type"
+          ]
+        ]
+      },
+      "id": {
+        "paths": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "session_id": {
+        "paths": [
+          [
+            "session_id"
+          ]
+        ]
+      },
+      "forked_from_id": {
+        "paths": [
+          [
+            "forked_from_id"
+          ]
+        ]
+      },
+      "parent_thread_id": {
+        "paths": [
+          [
+            "parent_thread_id"
+          ]
+        ]
+      },
+      "model": {
+        "paths": [
+          [
+            "model"
+          ]
+        ]
+      },
+      "info": {
+        "paths": [
+          [
+            "info"
+          ]
+        ]
+      },
+      "rate_limits": {
+        "paths": [
+          [
+            "rate_limits"
+          ]
+        ]
+      }
+    },
+    "tokenInfo": {
+      "total_token_usage": {
+        "paths": [
+          [
+            "total_token_usage"
+          ]
+        ]
+      },
+      "last_token_usage": {
+        "paths": [
+          [
+            "last_token_usage"
+          ]
+        ]
+      }
+    },
+    "tokenAmount": {
+      "total_tokens": {
+        "paths": [
+          [
+            "total_tokens"
+          ]
+        ]
+      },
+      "input_tokens": {
+        "paths": [
+          [
+            "input_tokens"
+          ]
+        ]
+      },
+      "output_tokens": {
+        "paths": [
+          [
+            "output_tokens"
+          ]
+        ]
+      }
+    },
+    "localLimit": {
+      "limit_id": {
+        "paths": [
+          [
+            "limit_id"
+          ]
+        ]
+      },
+      "limit_name": {
+        "paths": [
+          [
+            "limit_name"
+          ]
+        ]
+      },
+      "primary": {
+        "paths": [
+          [
+            "primary"
+          ]
+        ]
+      },
+      "secondary": {
+        "paths": [
+          [
+            "secondary"
+          ]
+        ]
+      },
+      "credits": {
+        "paths": [
+          [
+            "credits"
+          ]
+        ]
+      },
+      "individual_limit": {
+        "paths": [
+          [
+            "individual_limit"
+          ]
+        ]
+      },
+      "spend_control_reached": {
+        "paths": [
+          [
+            "spend_control_reached"
+          ]
+        ]
+      },
+      "plan_type": {
+        "paths": [
+          [
+            "plan_type"
+          ]
+        ]
+      },
+      "rate_limit_reached_type": {
+        "paths": [
+          [
+            "rate_limit_reached_type"
+          ]
+        ]
+      }
+    },
+    "localWindow": {
+      "used_percent": {
+        "paths": [
+          [
+            "used_percent"
+          ]
+        ]
+      },
+      "window_minutes": {
+        "paths": [
+          [
+            "window_minutes"
+          ]
+        ]
+      },
+      "resets_at": {
+        "paths": [
+          [
+            "resets_at"
+          ]
+        ]
+      }
+    }
+  }
+}
